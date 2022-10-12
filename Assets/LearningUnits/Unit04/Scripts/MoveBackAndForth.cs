@@ -41,10 +41,13 @@ public class MoveBackAndForth : MonoBehaviour
         // NOTE: Uncomment the four code lines below, and change what is inside the "if statement" to make this work
         // You should NOT write any new lines of code-- just change what is inside the "if statement"
 
-        //if (Something...)
-        //{
-        //    moveSpeed = -moveSpeed;
-        //}
+
+        // (Vector3.Distance(transform.position, startPosition) < .1f || 
+        
+        if ((moveAmount <= 0) | (moveAmount >= 1))
+        {
+           moveSpeed = -moveSpeed;
+        }
 
 
     }
